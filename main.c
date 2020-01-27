@@ -1,12 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "include/LinkedList.h"
 
 
-
-typedef struct node{
-    int data;
-    struct node *next;
-}NODE;
 
 main() {
    NODE *h = NULL;
