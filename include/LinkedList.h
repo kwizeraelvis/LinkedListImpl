@@ -6,15 +6,15 @@
 #define LINKEDLIST_LINKEDLIST_H
 
 #include <stdlib.h>
+#include <stdio.h>
 
 typedef struct node{
     int data;
     struct node *next;
-}NODE, *HEAD;
-
-HEAD h = NULL;
+}NODE, HEAD;
 
 push();
+display();
 
 
 #endif //LINKEDLIST_LINKEDLIST_H

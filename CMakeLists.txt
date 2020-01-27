@@ -3,6 +3,5 @@ project(LinkedList C)
 
 set(CMAKE_C_STANDARD 99)
 
-include_directories(include)
 
-add_executable(LinkedList main.c)
+add_executable(LinkedList main.c include/LinkedList.c include/LinkedList.h)
