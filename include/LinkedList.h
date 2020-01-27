@@ -10,6 +10,11 @@
 typedef struct node{
     int data;
     struct node *next;
-}NODE;
+}NODE, *HEAD;
+
+HEAD h = NULL;
+
+push();
+
 
 #endif //LINKEDLIST_LINKEDLIST_H
