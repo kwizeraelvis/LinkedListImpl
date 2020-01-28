@@ -7,7 +7,7 @@ main() {
     int choice;
    do{
        printf("\nEnter your choice\n");
-       printf("\n1.Push\n2.Display\n3.Exit\n");
+       printf("\n1.Push\n2.Display\n3.Append\n0.Exit\n");
        scanf("%d", &choice);
        switch(choice){
            case 1:
@@ -17,11 +17,15 @@ main() {
                display();
                break;
            case 3:
+               append();
+               break;
+           case 0:
                printf("\nExecution Ended");
                break;
            default:
                printf("\n Wrong Option");
                break;
        }
-   }while(choice != 0);
+   }while(choice != NULL);
+
 }

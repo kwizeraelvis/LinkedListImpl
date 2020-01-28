@@ -15,6 +15,7 @@ typedef struct node{
 
 push();
 display();
+append();
 
 
 #endif //LINKEDLIST_LINKEDLIST_H
