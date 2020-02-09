@@ -41,3 +41,7 @@ void append(){
         }
     }
 }
+
+void delete(){
+
+}

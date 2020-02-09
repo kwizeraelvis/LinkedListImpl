@@ -16,6 +16,7 @@ typedef struct node{
 void push();
 void display();
 void append();
+void delete();
 
 
 #endif //LINKEDLIST_LINKEDLIST_H
