@@ -10,6 +10,9 @@ main() {
        printf("\n1.Push\n2.Display\n3.Append\n0.Exit\n");
        scanf("%d", &choice);
        switch(choice){
+           case 0:
+               printf("\nExecution Ended");
+               break;
            case 1:
                push();
                break;
@@ -18,9 +21,6 @@ main() {
                break;
            case 3:
                append();
-               break;
-           case 0:
-               printf("\nExecution Ended");
                break;
            default:
                printf("\n Wrong Option");

@@ -13,9 +13,9 @@ typedef struct node{
     struct node *next;
 }NODE, HEAD;
 
-push();
-display();
-append();
+void push();
+void display();
+void append();
 
 
 #endif //LINKEDLIST_LINKEDLIST_H

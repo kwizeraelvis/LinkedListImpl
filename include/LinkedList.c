@@ -6,7 +6,7 @@
 
 HEAD *h = NULL;
 
-push(){
+void push(){
     NODE *p;
     p = (NODE*) malloc(sizeof(NODE));
     scanf("%d", &p->data);
@@ -14,7 +14,7 @@ push(){
     h = p;
 }
 
-display(){
+void display(){
     NODE *t;
     t = h;
     while (t != NULL){
@@ -23,18 +23,21 @@ display(){
     }
 }
 
-append(){
+void append(){
     NODE *p,*q;
     p = (NODE*)malloc(sizeof(NODE));
-    scanf("%d\t", &p->data);
+    scanf("%d", &p->data);
+    printf("This is the saved data %d\t:", p->data);
     p->next = NULL;
     if(h == NULL){
         h = p;
+        return;
     }else{
         q = h;
         while (q->next != NULL){
             q = q->next;
             q->next = p;
+            return;
         }
     }
 }
