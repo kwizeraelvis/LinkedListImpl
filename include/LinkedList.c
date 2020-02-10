@@ -43,5 +43,22 @@ void append(){
 }
 
 void delete(){
-
+    NODE *temp = h, *prev;
+    int dataToDelete;
+    printf("Enter element to delete");
+    scanf("%d", &dataToDelete);
+    if(temp != NULL && temp->data == dataToDelete){
+        h = temp;
+        free(temp);
+        return;
+    }
+    while(temp != NULL && temp->data != dataToDelete){
+        prev = temp;
+        temp = temp->next;
+    }
+    if(temp == NULL){
+        return;
+    }
+    prev->next = temp->next;
+    free(temp);
 }
